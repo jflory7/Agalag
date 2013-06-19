@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Background.cs" />
+     <Compile Include="Assets\Scripts\PlayerBoss.cs" />
      <Compile Include="Assets\Scripts\PlayerNormal.cs" />
      <Compile Include="Assets\Scripts\PlayerSpeedy.cs" />
      <Compile Include="Assets\Scripts\PlayerTank.cs" />
