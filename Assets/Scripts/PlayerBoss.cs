@@ -3,11 +3,17 @@ using System.Collections;
 
 public class PlayerBoss : MonoBehaviour
 {
+	// Call true-or-false variable to check if the missile has been fired or not.
+	public bool HasFired { get; set; }
+	
+	// Connect the script to the missile?
+	public Transform missile;
 
 	// Use this for initialization
 	void Start ()
 	{
-	
+		// Start the game with the missile unfired.
+		HasFired = false;
 	}
 	
 	// Update is called once per frame
@@ -15,6 +21,12 @@ public class PlayerBoss : MonoBehaviour
 	{
 		PlayerMovement ();
 		CheckBoundary ();
+		
+		// Check to see if the player has fired a missile.
+		if (Input.GetButton ("Fire"))
+		{
+			FireMissile ();
+		}
 	}
 	
 	public void PlayerMovement ()
@@ -28,6 +40,7 @@ public class PlayerBoss : MonoBehaviour
 			transform.Translate (10 * Vector3.left * Time.deltaTime);
 		}
 	}
+
 	public void CheckBoundary ()
 	{
 		// If the player's ship is to the left of the screen...
@@ -45,5 +58,19 @@ public class PlayerBoss : MonoBehaviour
 		}
 		// Prevent movement on the z-axis.
 		transform.position = new Vector3 (transform.position.x, transform.position.y, 24);
+	}
+	
+	// Fire a new missile.
+	private void FireMissile ()
+	{
+		// If the missile is not fired...
+		if (!HasFired)
+		{
+			// ...create a new missile, and then...
+			Instantiate (missile, new Vector3 (transform.position.x, transform.position.y + (renderer.bounds.size.y / 2), 24), Quaternion.Euler(new Vector3 (90, 180, 0)));
+			
+			// ...change the state of the missile to fired.
+			HasFired = true;
+		}
 	}
 }

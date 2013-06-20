@@ -1,19 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerBoss.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerTank.cs">
     <Files>
-      <File FileName="..\Space-Invaders\Assets\Scripts\Player.cs" Line="69" Column="1" />
-      <File FileName="..\Space-Invaders\Assets\Scripts\PlayerMissile.cs" Line="20" Column="1" />
-      <File FileName="Assets\Scripts\Background.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerNormal.cs" Line="70" Column="116" />
-      <File FileName="Assets\Scripts\PlayerSpeedy.cs" Line="75" Column="3" />
-      <File FileName="Assets\Scripts\PlayerTank.cs" Line="73" Column="4" />
+      <File FileName="Assets\Scripts\PlayerTank.cs" Line="31" Column="1" />
       <File FileName="Assets\Scripts\PlayerBoss.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EP1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EP2.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EP3.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Missile.cs" Line="37" Column="1" />
-      <File FileName="Assets\Scripts\MissileTank.cs" Line="26" Column="14" />
+      <File FileName="Assets\Scripts\MissileTank.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MissileBoss.cs" Line="29" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

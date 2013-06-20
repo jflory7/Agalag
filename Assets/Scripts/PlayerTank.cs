@@ -28,6 +28,7 @@ public class PlayerTank : MonoBehaviour
 			FireMissile ();
 		}
 	}
+
 	public void PlayerMovement ()
 	{
 		if (Input.GetButton ("Left"))
@@ -66,7 +67,7 @@ public class PlayerTank : MonoBehaviour
 		if (!HasFired)
 		{
 			// ...create a new missile, and then...
-			Instantiate (missile, new Vector3 (transform.position.x, transform.position.y + (renderer.bounds.size.y), 24), Quaternion.identity);
+			Instantiate (missile, new Vector3 (transform.position.x, transform.position.y + (renderer.bounds.size.y / 2), 24), Quaternion.identity);
 			
 			// ...change the state of the missile to fired.
 			HasFired = true;
