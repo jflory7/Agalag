@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scripts\EP1.cs" />
      <Compile Include="Assets\Scripts\EP2.cs" />
      <Compile Include="Assets\Scripts\EP3.cs" />
+     <Compile Include="Assets\Scripts\Missile.cs" />
+     <Compile Include="Assets\Scripts\MissileTank.cs" />
      <Compile Include="Assets\Scripts\PlayerBoss.cs" />
      <Compile Include="Assets\Scripts\PlayerNormal.cs" />
      <Compile Include="Assets\Scripts\PlayerSpeedy.cs" />
