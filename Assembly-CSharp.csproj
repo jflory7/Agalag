@@ -46,8 +46,11 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\EP1.cs" />
+     <Compile Include="Assets\Scripts\EP1Move.cs" />
      <Compile Include="Assets\Scripts\EP2.cs" />
+     <Compile Include="Assets\Scripts\EP2Move.cs" />
      <Compile Include="Assets\Scripts\EP3.cs" />
+     <Compile Include="Assets\Scripts\EP3Move.cs" />
      <Compile Include="Assets\Scripts\Missile.cs" />
      <Compile Include="Assets\Scripts\MissileBoss.cs" />
      <Compile Include="Assets\Scripts\MissileTank.cs" />
@@ -55,6 +58,7 @@
      <Compile Include="Assets\Scripts\PlayerNormal.cs" />
      <Compile Include="Assets\Scripts\PlayerSpeedy.cs" />
      <Compile Include="Assets\Scripts\PlayerTank.cs" />
+     <Compile Include="Assets\Scripts\RandomEnemyFiring.cs" />
      <Compile Include="Assets\Scripts\TextControl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,8 +19,8 @@ public class EP1 : MonoBehaviour
 	void Start () 
 	{
 		//Initialize the course's boundaries.
-		leftWall = -10f;
-		rightWall = 10f;
+		leftWall = -16f;
+		rightWall = 16f;
 		
 		//Initialize the location of the top row of blocks.
 		top = 13f;
@@ -36,7 +36,7 @@ public class EP1 : MonoBehaviour
 		float courtWidth = Mathf.Abs (leftWall) + Mathf.Abs (rightWall);
 		
 		//Calculate the number of aliens that can fit in the court.
-		float alienNum = 8;
+		float alienNum = 10;
 		
 		//Calculate the size of the gap between the maximum number of bricksand the edge of the court.
 		float endGap = courtWidth - (alienNum * normalAlien.renderer.bounds.size.x);
@@ -53,7 +53,7 @@ public class EP1 : MonoBehaviour
 			//..and iterate across the screen using the gap size and block width to guide us.
 			for (float xPos = leftWall; xPos <= rightWall; xPos = alienGap + normalAlien.renderer.bounds.size.x + xPos)
 			{
-				Instantiate (normalAlien, new Vector3 (xPos, yPos, 8), Quaternion.Euler( new Vector3( 270, 180, 180)));
+				Instantiate (normalAlien, new Vector3 (xPos, yPos, 24), Quaternion.Euler( new Vector3( 270, 180, 180)));
 			}
 			
 			

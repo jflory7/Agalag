@@ -28,7 +28,7 @@ public class PlayerSpeedy : MonoBehaviour
 			FireMissile ();
 		}
 	}
-	// Check the position of the ship compared to the boundaries.
+
 	public void PlayerMovement ()
 	{
 		if (Input.GetButton ("Up"))
