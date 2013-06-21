@@ -26,4 +26,16 @@ public class MissileBoss : MonoBehaviour
 			playerBoss.HasFired = false;
 		}
 	}
+	
+		
+	void OnCollisionEnter (Collision collision)
+	{
+		
+		Destroy (collision.gameObject);
+		
+		Destroy (gameObject);
+		
+		playerBoss.HasFired = false;
+	
+	}
 }

@@ -25,4 +25,20 @@ public class Missile : MonoBehaviour
 			playerNormal.HasFired = false;
 		}
 	}
+	
+	void OnCollisionEnter (Collision collision)
+	{
+		
+		EP1Move enemy = collision.gameObject.GetComponent < EP1Move > ();
+
+		if (enemy != null)
+		{
+			enemy.Death ();
+		}
+		
+		Destroy (gameObject);
+		
+		playerNormal.HasFired = false;
+	
+	}
 }

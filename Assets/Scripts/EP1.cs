@@ -6,6 +6,7 @@ public class EP1 : MonoBehaviour
 	//Store the location of the left and right walls.
 	private float leftWall;
 	private float rightWall;
+	public Material explosion;
 	
 	//Store the top location of aliens.
 	private float top;

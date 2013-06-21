@@ -25,4 +25,21 @@ public class MissileSpeedy : MonoBehaviour
 			playerSpeedy.HasFired = false;
 		}
 	}
+	
+		
+void OnCollisionEnter (Collision collision)
+	{
+		
+		EP2Move enemy = collision.gameObject.GetComponent < EP2Move > ();
+
+		if (enemy != null)
+		{
+			enemy.Death ();
+		}
+		
+		Destroy (gameObject);
+		
+		playerSpeedy.HasFired = false;
+	
+	}
 }

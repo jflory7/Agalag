@@ -67,7 +67,7 @@ public class PlayerBoss : MonoBehaviour
 		if (!HasFired)
 		{
 			// ...create a new missile, and then...
-			Instantiate (missile, new Vector3 (transform.position.x, transform.position.y + (renderer.bounds.size.y / 2), 24), Quaternion.Euler(new Vector3 (90, 180, 0)));
+			Instantiate (missile, new Vector3 (transform.position.x, transform.position.y + (renderer.bounds.size.y / 2) + 1, 24), Quaternion.Euler(new Vector3 (90, 180, 0)));
 			
 			// ...change the state of the missile to fired.
 			HasFired = true;

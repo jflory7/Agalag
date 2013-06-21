@@ -26,4 +26,21 @@ public class MissileTank : MonoBehaviour
 			playerTank.HasFired = false;
 		}
 	}
+	
+		
+	void OnCollisionEnter (Collision collision)
+	{
+		
+		EP3Move enemy = collision.gameObject.GetComponent < EP3Move > ();
+
+		if (enemy != null)
+		{
+			enemy.Death ();
+		}
+		
+		Destroy (gameObject);
+		
+		playerTank.HasFired = false;
+	
+	}
 }
