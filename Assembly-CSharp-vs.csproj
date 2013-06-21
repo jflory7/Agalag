@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\EP2Move.cs" />
      <Compile Include="Assets\Scripts\EP3.cs" />
      <Compile Include="Assets\Scripts\EP3Move.cs" />
+     <Compile Include="Assets\Scripts\Gamestate.cs" />
      <Compile Include="Assets\Scripts\Missile.cs" />
      <Compile Include="Assets\Scripts\MissileBoss.cs" />
      <Compile Include="Assets\Scripts\MissileSpeedy.cs" />

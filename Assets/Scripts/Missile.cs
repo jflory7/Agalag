@@ -28,7 +28,6 @@ public class Missile : MonoBehaviour
 	
 	void OnCollisionEnter (Collision collision)
 	{
-		
 		EP1Move enemy = collision.gameObject.GetComponent < EP1Move > ();
 
 		if (enemy != null)
@@ -39,6 +38,5 @@ public class Missile : MonoBehaviour
 		Destroy (gameObject);
 		
 		playerNormal.HasFired = false;
-	
 	}
 }
