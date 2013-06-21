@@ -3,8 +3,6 @@ using System.Collections;
 
 public class TextControl : MonoBehaviour
 {
-	bool txt_Exit = false;
-	
 	// Detect the player's mouse.
 	public void OnMouseEnter ()
 	{
