@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\EP3Move.cs" />
      <Compile Include="Assets\Scripts\Missile.cs" />
      <Compile Include="Assets\Scripts\MissileBoss.cs" />
+     <Compile Include="Assets\Scripts\MissileSpeedy.cs" />
      <Compile Include="Assets\Scripts\MissileTank.cs" />
      <Compile Include="Assets\Scripts\PlayerBoss.cs" />
      <Compile Include="Assets\Scripts\PlayerNormal.cs" />
