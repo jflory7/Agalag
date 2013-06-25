@@ -8,6 +8,7 @@ public class Gamestate : MonoBehaviour
 	{
 		Pause,
 		Play,
+		LevelComplete,
 		GameOver
 	};
 
@@ -19,5 +20,11 @@ public class Gamestate : MonoBehaviour
 	{
 		// Initialize to the pause state.
 		CurrentState = State.Pause;
+	}
+	
+	// Update is called once per frame
+	void Update ()
+	{
+		Debug.Log (CurrentState);
 	}
 }

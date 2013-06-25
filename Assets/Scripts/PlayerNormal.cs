@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PlayerNormal : MonoBehaviour
 {
+	// Holds information about the game state.
+	public Gamestate state;
+	
 	// Call true-or-false variable to check if the missile has been fired or not.
 	public bool HasFired { get; set; }
 	
@@ -14,6 +17,9 @@ public class PlayerNormal : MonoBehaviour
 	{
 		// Start the game with the missile unfired.
 		HasFired = false;
+		
+		// Link the player to the game state.
+		state = Camera.main.GetComponent<Gamestate>();
 	}
 	
 	// Update is called once per frame
@@ -72,5 +78,10 @@ public class PlayerNormal : MonoBehaviour
 			// ...change the state of the missile to fired.
 			HasFired = true;
 		}
+	}
+
+	void OnCollisionEnter (Collision collision)
+	{
+		state.CurrentState = Gamestate.State.GameOver;
 	}
 }
