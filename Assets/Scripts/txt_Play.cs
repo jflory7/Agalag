@@ -3,31 +3,24 @@ using System.Collections;
 
 public class txt_Play : MonoBehaviour
 {
+	public AudioSource music;
+	
 	public void OnMouseDown ()
 	{
+		FadeAudio(0.1f);
+	}
+	
+	private void FadeAudio (float timer)
+	{
+		float t = 1;
+		while (t > 0)
+		{
+			t -= Time.deltaTime * timer;
+			music.volume = t;
+			
+			Debug.Log (t);
+		}
+		music.Stop ();
 		Application.LoadLevel ("Level1");
 	}
 }
-
-//enum Fade {In, Out}
-//
-//var fadeTime = 4.0;
-//
-//function Start ()
-//{
-//    FadeAudio(fadeTime, Fade.Out);
-//}
-//
-//function FadeAudio (timer : float, fadeType : Fade) {
-//    var start = fadeType == Fade.In? 0.0 : 1.0;
-//    var end = fadeType == Fade.In? 1.0 : 0.0;
-//    var i = 0.0;
-//    var step = 1.0/timer;
-//
-//    while (i <= 1.0)
-//	{
-//        i += step * Time.deltaTime;
-//        audio.volume = Mathf.Lerp(start, end, i);
-//        yield;
-//    }
-//}
