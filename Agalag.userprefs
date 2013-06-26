@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Aliens\EP1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu Scripts\Level Transitions\Level1Continue.cs">
     <Files>
-      <File FileName="Assets\Scripts\Aliens\EP1.cs" Line="69" Column="25" />
-      <File FileName="..\Breakout\Assets\Scripts\GameState.cs" Line="17" Column="1" />
-      <File FileName="..\Breakout\Assets\Scripts\Ball.cs" Line="6" Column="1" />
-      <File FileName="Assets\Scripts\Gamestate.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu Scripts\Level Transitions\Level1Continue.cs" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\Menu Scripts\Level Transitions\Level2Continue.cs" Line="24" Column="2" />
+      <File FileName="Assets\Scripts\Gamestates\Level1Transition.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scripts\Gamestates\Level2Transition.cs" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\Gamestates\Level3Transition.cs" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

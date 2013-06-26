@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class txt_Play : MonoBehaviour
+public class Level2Continue : MonoBehaviour
 {
 	public AudioSource music;
 	
@@ -19,6 +19,6 @@ public class txt_Play : MonoBehaviour
 			music.volume = t;
 		}
 		music.Stop ();
-		Application.LoadLevel ("Level1");
+		Application.LoadLevel ("Level3");
 	}
 }

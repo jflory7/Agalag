@@ -4,7 +4,7 @@ using System.Collections;
 public class EP1 : MonoBehaviour 
 {
 	//Store the amount of aliens left.
-	public int remainingEnemies;
+	public int remainingEnemies1;
 	
 	//Store the location of the left and right walls.
 	private float leftWall;
@@ -32,7 +32,7 @@ public class EP1 : MonoBehaviour
 		top = 13f;
 		
 		//Set enemies remaining to zero.
-		remainingEnemies = 0;
+		remainingEnemies1 = 0;
 		
 		//Initialize the aliens on the screen
 		InitializeAliens ();
@@ -66,7 +66,7 @@ public class EP1 : MonoBehaviour
 			{
 				Transform enemy = Instantiate (normalAlien, new Vector3 (xPos, yPos, 24), Quaternion.Euler( new Vector3( 270, 180, 180))) as Transform;
 			
-				remainingEnemies ++;
+				remainingEnemies1 ++;
 				
 				EP1Move enemyScript = enemy.GetComponent < EP1Move > ();
 				
@@ -91,7 +91,7 @@ public class EP1 : MonoBehaviour
 	public void KillEnemy (int column)
 	{
 		enemiesLeft [column] ++;
-		remainingEnemies --;
+		remainingEnemies1 --;
 	}
 	
 }

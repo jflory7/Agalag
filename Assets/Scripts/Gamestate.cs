@@ -8,7 +8,6 @@ public class Gamestate : MonoBehaviour
 	{
 		Pause,
 		Play,
-		LevelComplete,
 		GameOver
 	};
 

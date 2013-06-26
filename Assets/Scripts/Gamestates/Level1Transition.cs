@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class LevelTransition : MonoBehaviour
+public class Level1Transition : MonoBehaviour
 {
 	private EP1 enemies;
 
@@ -14,9 +14,9 @@ public class LevelTransition : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (enemies.remainingEnemies == 0)
+		if (enemies.remainingEnemies1 == 0)
 		{
-			Application.LoadLevel ("Level2");
+			Application.LoadLevel ("Level1Complete");
 		}
 	}
 }
