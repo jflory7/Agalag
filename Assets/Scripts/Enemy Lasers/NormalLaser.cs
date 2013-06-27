@@ -27,9 +27,7 @@ public class NormalLaser : MonoBehaviour
 		{
 			player.Death ();
 		}
-		
 		Destroy (gameObject);
-		
 	}
 	
 }

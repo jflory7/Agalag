@@ -21,7 +21,7 @@ public class EP2Move : MonoBehaviour
 	// Update is called once per frame.
 	void Update ()
 	{
-		transform.position = new Vector3 (transform.position.x, transform.position.y - .005f, transform.position.z);	
+		transform.position = new Vector3 (transform.position.x, transform.position.y - .01f, transform.position.z);	
 		
 		CheckFire ();
 	}
@@ -56,7 +56,7 @@ public class EP2Move : MonoBehaviour
 	
 	private void CheckFire ()
 	{
-		if (Random.Range (0, 800) == 42 && enemies.enemiesLeft [Column] == Row)
+		if (Random.Range (0, 600) == 42 && enemies.enemiesLeft [Column] == Row)
 		{
 			FireLaser ();
 		}

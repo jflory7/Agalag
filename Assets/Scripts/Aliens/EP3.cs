@@ -13,6 +13,8 @@ public class EP3 : MonoBehaviour
 	
 	public int [] enemiesLeft;
 	
+	public int score;
+	
 	//Store the top location of aliens.
 	private float top;
 	
@@ -30,6 +32,8 @@ public class EP3 : MonoBehaviour
 		
 		//Initialize the location of the top row of blocks.
 		top = 13f;
+		
+		score = 660;
 		
 		//Initialize the aliens on the screen
 		InitializeAliens ();
@@ -89,6 +93,7 @@ public class EP3 : MonoBehaviour
 	{
 		enemiesLeft [column] ++;
 		remainingEnemies3 --;
+		score = score + 10;
 	}
 	
 }

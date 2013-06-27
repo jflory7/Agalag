@@ -50,7 +50,6 @@
      <Compile Include="Assets\Scripts\Aliens\EP2Move.cs" />
      <Compile Include="Assets\Scripts\Aliens\EP3.cs" />
      <Compile Include="Assets\Scripts\Aliens\EP3Move.cs" />
-     <Compile Include="Assets\Scripts\Aliens\RandomEnemyFiring.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\Enemy Lasers\NormalLaser.cs" />
      <Compile Include="Assets\Scripts\Enemy Lasers\SpeedyLaser.cs" />
@@ -73,6 +72,9 @@
      <Compile Include="Assets\Scripts\Players\PlayerNormal.cs" />
      <Compile Include="Assets\Scripts\Players\PlayerSpeedy.cs" />
      <Compile Include="Assets\Scripts\Players\PlayerTank.cs" />
+     <Compile Include="Assets\Scripts\Score1.cs" />
+     <Compile Include="Assets\Scripts\Score2.cs" />
+     <Compile Include="Assets\Scripts\Score3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

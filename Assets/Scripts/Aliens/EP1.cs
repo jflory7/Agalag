@@ -12,6 +12,8 @@ public class EP1 : MonoBehaviour
 	public Material explosion;
 	
 	public int [] enemiesLeft;
+
+	public int score;
 	
 	//Store the top location of aliens.
 	private float top;
@@ -30,6 +32,8 @@ public class EP1 : MonoBehaviour
 		
 		//Initialize the location of the top row of blocks.
 		top = 13f;
+		
+		score = 0;
 		
 		//Set enemies remaining to zero.
 		remainingEnemies1 = 0;
@@ -66,7 +70,7 @@ public class EP1 : MonoBehaviour
 			{
 				Transform enemy = Instantiate (normalAlien, new Vector3 (xPos, yPos, 24), Quaternion.Euler( new Vector3( 270, 180, 180))) as Transform;
 			
-				remainingEnemies1 ++;
+				remainingEnemies1++;
 				
 				EP1Move enemyScript = enemy.GetComponent < EP1Move > ();
 				
@@ -92,6 +96,7 @@ public class EP1 : MonoBehaviour
 	{
 		enemiesLeft [column] ++;
 		remainingEnemies1 --;
+		score = score + 10;
 	}
 	
 }

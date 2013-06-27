@@ -7,7 +7,7 @@ public class SpeedyLaser : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-	rigidbody.AddForce (0, -1000, 0);
+	rigidbody.AddForce (0, -1500, 0);
 	}
 	
 	// Update is called once per frame
@@ -28,7 +28,7 @@ public class SpeedyLaser : MonoBehaviour
 			player.Death ();
 		}
 		
-		
+		Destroy (gameObject);
 		
 	}
 	
