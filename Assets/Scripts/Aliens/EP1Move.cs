@@ -24,6 +24,11 @@ public class EP1Move : MonoBehaviour
 		transform.position = new Vector3 (transform.position.x, transform.position.y - .005f, transform.position.z);	
 		
 		CheckFire ();
+		
+		if (transform.position.y < -10)
+		{
+			Application.LoadLevel ("GameOver");
+		}
 	}
 
 	public void Death ()
@@ -56,7 +61,7 @@ public class EP1Move : MonoBehaviour
 	
 	private void CheckFire ()
 	{
-		if (Random.Range (0, 600) == 42 && enemies.enemiesLeft [Column] == Row)
+		if (Random.Range (0, 500) == 42 && enemies.enemiesLeft [Column] == Row)
 		{
 			FireLaser ();
 		}

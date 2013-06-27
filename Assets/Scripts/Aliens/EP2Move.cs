@@ -24,6 +24,11 @@ public class EP2Move : MonoBehaviour
 		transform.position = new Vector3 (transform.position.x, transform.position.y - .01f, transform.position.z);	
 		
 		CheckFire ();
+		
+		if (transform.position.y < -10)
+		{
+			Application.LoadLevel ("GameOver");
+		}
 	}
 	
 	public void Death ()
