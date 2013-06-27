@@ -8,7 +8,6 @@ public class Gamestate : MonoBehaviour
 	{
 		Pause,
 		Play,
-		GameOver
 	};
 
 	// Track the current state of the game.

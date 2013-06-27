@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerTank : MonoBehaviour
 {
+	private bool controllable;
+	
 	// Call true-or-false variable to check if the missile has been fired or not.
 	public bool HasFired { get; set; }
 	
@@ -16,12 +18,14 @@ public class PlayerTank : MonoBehaviour
 	{
 		// Start the game with the missile unfired.
 		HasFired = false;
+		
+		controllable = true;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		PlayerMovement ();
+		if (controllable)PlayerMovement ();
 		CheckBoundary ();
 		
 		// Check to see if the player has fired a missile.
@@ -86,7 +90,7 @@ public class PlayerTank : MonoBehaviour
 		
 		InvokeRepeating ("AnimateExplosion", .15f, .15f);
 		
-		
+		controllable = false;
 	}
 	
 	private void AnimateExplosion ()
@@ -95,6 +99,8 @@ public class PlayerTank : MonoBehaviour
 	
 		if (renderer.material.mainTextureOffset.x > 1)
 		{
+			Application.LoadLevel ("GameOver");
+			
 			Destroy (gameObject);	
 		}
 	}

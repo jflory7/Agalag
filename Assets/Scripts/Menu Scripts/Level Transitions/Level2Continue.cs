@@ -7,7 +7,7 @@ public class Level2Continue : MonoBehaviour
 	
 	public void OnMouseDown ()
 	{
-		FadeAudio(0.1f);
+		FadeAudio(0.00001f);
 	}
 	
 	private void FadeAudio (float timer)

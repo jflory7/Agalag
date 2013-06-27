@@ -25,7 +25,7 @@ public class EP1Move : MonoBehaviour
 		
 		CheckFire ();
 	}
-	
+
 	public void Death ()
 	{
 		renderer.material = explosion;	

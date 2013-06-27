@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class txt_Play : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
 	public AudioSource music;
 	
@@ -11,7 +11,7 @@ public class txt_Play : MonoBehaviour
 	}
 	
 	private void FadeAudio (float timer)
-	{		
+	{
 		float t = 1;
 		while (t > 0)
 		{
@@ -19,6 +19,6 @@ public class txt_Play : MonoBehaviour
 			music.volume = t;
 		}
 		music.Stop ();
-		Application.LoadLevel ("Level1");
+		Application.LoadLevel ("Menu");
 	}
 }

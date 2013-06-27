@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Gamestates\Level1Transition.cs" />
      <Compile Include="Assets\Scripts\Gamestates\Level2Transition.cs" />
      <Compile Include="Assets\Scripts\Gamestates\Level3Transition.cs" />
+     <Compile Include="Assets\Scripts\Menu Scripts\Level Transitions\GameOver.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\Level Transitions\Level1Continue.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\Level Transitions\Level2Continue.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\ReturnToMenu.cs" />
