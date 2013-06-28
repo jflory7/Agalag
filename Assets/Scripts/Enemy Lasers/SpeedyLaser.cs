@@ -3,11 +3,14 @@ using System.Collections;
 
 public class SpeedyLaser : MonoBehaviour 
 {
+	private Sounds soundManager;
 
 	// Use this for initialization
 	void Start () 
 	{
-	rigidbody.AddForce (0, -1500, 0);
+		rigidbody.AddForce (0, -1500, 0);
+		
+		soundManager = Camera.main.GetComponent<Sounds>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +30,7 @@ public class SpeedyLaser : MonoBehaviour
 		{
 			player.Death ();
 		}
+		soundManager.PlaySound(0);
 		
 		Destroy (gameObject);
 		

@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MissileSpeedy : MonoBehaviour
 {
+	private Sounds soundManager;
+	
 	private PlayerSpeedy playerSpeedy;
 	
 	// Use this for initialization
@@ -13,6 +15,8 @@ public class MissileSpeedy : MonoBehaviour
 
 		// This connects the missile to the speedy ship when fired.
 		playerSpeedy = GameObject.Find ("Player Speedy").GetComponent < PlayerSpeedy > ();
+		
+		soundManager = Camera.main.GetComponent<Sounds>();
 	}
 	
 	// Update is called once per frame
@@ -36,6 +40,8 @@ void OnCollisionEnter (Collision collision)
 		{
 			enemy.Death ();
 		}
+		
+		soundManager.PlaySound(0);
 		
 		Destroy (gameObject);
 		

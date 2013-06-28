@@ -3,11 +3,14 @@ using System.Collections;
 
 public class TankLaser : MonoBehaviour 
 {
+	private Sounds soundManager;
 
 	// Use this for initialization
 	void Start () 
 	{
-	rigidbody.AddForce (0, -800, 0);
+		rigidbody.AddForce (0, -800, 0);
+		
+		soundManager = Camera.main.GetComponent<Sounds>();
 	}
 	
 	// Update is called once per frame
@@ -27,5 +30,6 @@ public class TankLaser : MonoBehaviour
 		{
 			player.Death ();
 		}
+		soundManager.PlaySound(0);
 	}
 }

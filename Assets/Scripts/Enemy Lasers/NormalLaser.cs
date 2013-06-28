@@ -3,11 +3,14 @@ using System.Collections;
 
 public class NormalLaser : MonoBehaviour 
 {
+	private Sounds soundManager;
 
 	// Use this for initialization
 	void Start () 
 	{
-	rigidbody.AddForce (0, -1000, 0);
+		rigidbody.AddForce (0, -1000, 0);
+		
+		soundManager = Camera.main.GetComponent<Sounds>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +30,8 @@ public class NormalLaser : MonoBehaviour
 		{
 			player.Death ();
 		}
+		soundManager.PlaySound(0);
+		
 		Destroy (gameObject);
 	}
 	

@@ -3,7 +3,8 @@ using System.Collections;
 
 public class MissileTank : MonoBehaviour 
 {
-
+	private Sounds soundManager;
+	
 	private PlayerTank playerTank;
 	
 	// Use this for initialization
@@ -14,6 +15,8 @@ public class MissileTank : MonoBehaviour
 		
 		// This connects the missile to the normal ship when fired.
 		playerTank = GameObject.Find ("Player Tank").GetComponent < PlayerTank > ();
+		
+		soundManager = Camera.main.GetComponent<Sounds>();
 	}
 	
 	// Update is called once per frame
@@ -37,6 +40,8 @@ public class MissileTank : MonoBehaviour
 		{
 			enemy.Death ();
 		}
+		
+		soundManager.PlaySound(0);
 		
 		Destroy (gameObject);
 		
