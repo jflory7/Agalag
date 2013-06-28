@@ -21,7 +21,7 @@ public class EP3Move : MonoBehaviour
 	// Update is called once per frame.
 	void Update ()
 	{
-		transform.position = new Vector3 (transform.position.x, transform.position.y - .003f, transform.position.z);	
+		transform.position = new Vector3 (transform.position.x, transform.position.y - .008f, transform.position.z);	
 		
 		CheckFire ();
 

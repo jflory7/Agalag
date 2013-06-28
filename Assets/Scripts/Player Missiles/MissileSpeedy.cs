@@ -11,7 +11,7 @@ public class MissileSpeedy : MonoBehaviour
 	void Start ()
 	{
 		// Add initial force.
-		rigidbody.AddForce (0, 1000, 0);
+		rigidbody.AddForce (0, 1250, 0);
 
 		// This connects the missile to the speedy ship when fired.
 		playerSpeedy = GameObject.Find ("Player Speedy").GetComponent < PlayerSpeedy > ();

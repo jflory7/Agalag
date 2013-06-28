@@ -11,7 +11,7 @@ public class MissileTank : MonoBehaviour
 	void Start ()
 	{
 		// Add initial force.
-		rigidbody.AddForce (0, 1000, 0);
+		rigidbody.AddForce (0, 800, 0);
 		
 		// This connects the missile to the normal ship when fired.
 		playerTank = GameObject.Find ("Player Tank").GetComponent < PlayerTank > ();

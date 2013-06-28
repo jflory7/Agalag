@@ -1,16 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy Lasers\TankLaser.cs">
-    <Files>
-      <File FileName="Assets\Scripts\Sounds.cs" Line="10" Column="8" />
-      <File FileName="Assets\Scripts\Player Missiles\Missile.cs" Line="42" Column="3" />
-      <File FileName="Assets\Scripts\Player Missiles\MissileSpeedy.cs" Line="6" Column="2" />
-      <File FileName="Assets\Scripts\Player Missiles\MissileTank.cs" Line="44" Column="3" />
-      <File FileName="Assets\Scripts\Enemy Lasers\NormalLaser.cs" Line="33" Column="29" />
-      <File FileName="Assets\Scripts\Enemy Lasers\SpeedyLaser.cs" Line="33" Column="29" />
-      <File FileName="Assets\Scripts\Enemy Lasers\TankLaser.cs" Line="33" Column="29" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
